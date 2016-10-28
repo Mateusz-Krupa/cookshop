@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['recipe.component.sass']
 })
 export class RecipeComponent {
-  title = 'app works!';
+  title = 'Single Reciples'; 
 }
