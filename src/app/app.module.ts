@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { MaterialModule } from '@angular/material';
 
 import { RecipeComponent } from './recipe/recipe.component';
 import { RecipeListComponent } from './recipe-list/recipeList.component';
@@ -18,12 +19,13 @@ import { HomeComponent } from './home/home.component';
     RecipeComponent,
     RecipeListComponent,
     BasketComponent,
-    HomeComponent
+    HomeComponent, 
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    MaterialModule.forRoot(),
     RouterModule.forRoot([
       { path: 'recipe/:id', component: RecipeComponent },
       { path: 'recipeList', component: RecipeListComponent },
