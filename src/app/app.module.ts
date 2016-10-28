@@ -7,20 +7,28 @@ import { RouterModule } from '@angular/router';
 import { RecipeComponent } from './recipe/recipe.component';
 import { RecipeListComponent } from './recipe-list/recipeList.component';
 import { AppComponent } from './app.component';
+import { BasketComponent } from './basket/basket.component';
+import { HomeComponent } from './home/home.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     RecipeComponent,
-    RecipeListComponent
+    RecipeListComponent,
+    BasketComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule, 
+    HttpModule,
     RouterModule.forRoot([
-     {path: 'recipe', component: RecipeComponent}, 
-     {path: 'recipeList', component: RecipeListComponent}    
+      { path: 'recipe/:id', component: RecipeComponent },
+      { path: 'recipeList', component: RecipeListComponent },
+      { path: 'basket', component: BasketComponent },
+      { path: '', component: HomeComponent }
     ])
   ],
   providers: [],
