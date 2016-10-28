@@ -1,5 +1,30 @@
-<h1>
-  {{title}}
+<div class="row">
+	<nav class="col-xs-12">
+		<div class="col-xs-8 title"> Navigation: </div>
 
-      <router-outlet></router-outlet>
+		<ul>
+			<li>
+				<a href="/">
+         Home 
+        </a>
+			</li>
+			<li>
+				<a href="/recipeList">
+				  Recipes
+        </a>
+			</li>
+			<li>
+				<a href="/basket">
+				  Basket
+        </a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+
+<h1>
+	{{title}}
+
+	<router-outlet></router-outlet>
 </h1>
