@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+
+  navigationItems = [{
+    name: 'home',
+    link: ''
+  }, {
+    name: 'recipes',
+    link: 'recipeList'
+  }, {
+    name: 'basket',
+    link: 'basket'
+  }
+  ];
+
 }

@@ -1,30 +1,6 @@
-<div class="row">
-	<nav class="col-xs-12">
-		<div class="col-xs-8 title"> Navigation: </div>
-
-		<ul>
-			<li>
-				<a routerLink="/">
-         Home 
-        </a>
-			</li>
-			<li>
-				<a routerLink="/recipeList">
-				  Recipes
-        </a>
-			</li>
-			<li>
-				<a routerLink="/basket">
-				  Basket
-        </a>
-			</li>
-		</ul>
-	</nav>
-</div>
-
+<main-navigaton [items]='navigationItems'></main-navigaton>
 
 <h1>
 	{{title}}
-
 	<router-outlet></router-outlet>
 </h1>

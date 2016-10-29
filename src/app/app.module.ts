@@ -10,7 +10,7 @@ import { RecipeListComponent } from './recipe-list/recipeList.component';
 import { AppComponent } from './app.component';
 import { BasketComponent } from './basket/basket.component';
 import { HomeComponent } from './home/home.component';
-
+import { MainNavigation } from './ui/main-navigation/main-navigation.component';
 
 
 @NgModule({
@@ -19,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     RecipeComponent,
     RecipeListComponent,
     BasketComponent,
-    HomeComponent, 
+    HomeComponent,
+    MainNavigation
   ],
   imports: [
     BrowserModule,
