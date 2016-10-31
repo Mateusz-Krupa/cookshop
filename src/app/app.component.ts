@@ -17,7 +17,6 @@ export class AppComponent {
   }, {
     name: 'basket',
     link: 'basket'
-  }
-  ];
+  }];
 
 }
