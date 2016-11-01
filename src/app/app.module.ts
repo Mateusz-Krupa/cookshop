@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 import { BasketComponent } from './basket/basket.component';
 import { HomeComponent } from './home/home.component';
 import { MainNavigation } from './ui/main-navigation/main-navigation.component';
-
+import { BottomNavigtion } from './ui/bottom-navigation/bottom-navigation.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import { MainNavigation } from './ui/main-navigation/main-navigation.component';
     RecipeListComponent,
     BasketComponent,
     HomeComponent,
-    MainNavigation
+    MainNavigation, 
+    BottomNavigtion, 
   ],
   imports: [
     BrowserModule,

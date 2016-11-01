@@ -1,0 +1,29 @@
+.bottom-navigation{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background: rgba(0,0,0,0.05);
+    padding: 5px 0;
+    border-top: 1px solid #ccc;
+}
+
+.button-container{
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    a{ 
+        text-decoration: none;
+        color: white;
+        display: block;
+        height: 100%;
+        cursor: pointer;
+        width: 100%;
+
+        img{
+            height: 39px;
+        }
+    }
+}
