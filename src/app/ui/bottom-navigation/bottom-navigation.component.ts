@@ -15,12 +15,12 @@ export class BottomNavigtion {
         },
         {
             name: 'Active Recipes', 
-            icon: 'assets/svg/internet.svg',
+            icon: 'assets/svg/list.svg',
             link: 'recipes?active=true'
         }, 
         {
             name: 'My Fridge', 
-            icon: 'assets/svg/list.svg',
+            icon: 'assets/svg/internet.svg',
             link: 'my-fridge'
         },
         {

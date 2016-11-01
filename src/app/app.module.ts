@@ -12,7 +12,8 @@ import { BasketComponent } from './basket/basket.component';
 import { HomeComponent } from './home/home.component';
 import { MainNavigation } from './ui/main-navigation/main-navigation.component';
 import { BottomNavigtion } from './ui/bottom-navigation/bottom-navigation.component';
-
+import { CategoryList } from './ui/category-list/category-list.component'
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { BottomNavigtion } from './ui/bottom-navigation/bottom-navigation.compon
     HomeComponent,
     MainNavigation, 
     BottomNavigtion, 
+    CategoryList
   ],
   imports: [
     BrowserModule,
