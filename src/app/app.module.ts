@@ -13,7 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { MainNavigation } from './ui/main-navigation/main-navigation.component';
 import { BottomNavigtion } from './ui/bottom-navigation/bottom-navigation.component';
 import { CategoryList } from './ui/category-list/category-list.component'
- 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,8 +21,8 @@ import { CategoryList } from './ui/category-list/category-list.component'
     RecipeListComponent,
     BasketComponent,
     HomeComponent,
-    MainNavigation, 
-    BottomNavigtion, 
+    MainNavigation,
+    BottomNavigtion,
     CategoryList
   ],
   imports: [
@@ -32,7 +32,7 @@ import { CategoryList } from './ui/category-list/category-list.component'
     MaterialModule.forRoot(),
     RouterModule.forRoot([
       { path: 'recipe/:id', component: RecipeComponent },
-      { path: 'recipeList', component: RecipeListComponent },
+      { path: 'recipeList/:id', component: RecipeListComponent },
       { path: 'basket', component: BasketComponent },
       { path: '', component: HomeComponent }
     ])

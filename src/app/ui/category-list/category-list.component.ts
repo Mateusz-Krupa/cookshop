@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'category-list',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
     styleUrls: ['category-list.component.sass']
 })
 export class CategoryList {
+    
+    @Input()
+    items; 
 
 }

@@ -1,6 +1,12 @@
 
 <nav class='col-xs-12 main-navigation'>
     <div class='col-xs-8'>
-
+        <ul>
+            <li *ngFor='let item of items'>
+                <a routerLink='/{{item.link}}'>
+                    {{item.name}}
+                 </a>
+            </li>
+        </ul>
     </div>
 </nav>
