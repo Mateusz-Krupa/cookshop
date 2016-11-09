@@ -1,7 +1,15 @@
-<div class="wrapper" *ngFor="let item of items" >
-    
-    {{item.name}}
+<div class="wrapper" *ngFor="let item of items">
 
-    <img src="{{item.image}}" />
+  <a href="" class="recipeLink">
 
-</div>    
+    <div class="imgWrapper">
+
+      <img class="itemImage" src="{{item.image}}"/>
+      <span class="kcal">kcal: {{item.kcal}}</span>
+      <img src="/assets/img/glutenicon.jpg" *ngIf="item.allergens.gluten" class="allergenIcon"/>
+    </div>
+    <p class="recipeName">{{item.name}}</p>
+
+  </a>
+
+</div>

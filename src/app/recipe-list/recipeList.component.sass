@@ -1,2 +1,59 @@
-li 
-    color: red;
+.wrapper
+  width: 100%
+  display: inline-block
+  box-sizing: border-box
+  padding: 2px
+
+  .imgWrapper
+    position: relative
+    box-sizing: border-box
+
+  .allergenIcon
+    width: 20px
+    height: 20px
+    position: absolute
+    top: 5px
+    left: 5px
+
+
+  .kcal
+    position: absolute
+    right: 5px
+    bottom: 10px
+    text-transform: uppercase
+    color: white
+    font-size: 13px
+    font-weight: bold
+    background-color: rgba(0, 0, 0, .5)
+
+  .itemImage
+    width: 100%
+
+  .recipeName
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    background-color: lightgrey
+    color: black
+    font-weight: bold
+    padding: 5px
+    margin: -4px 0 0 0
+    border-bottom: 1px solid darkgray
+
+  a
+    text-decoration: none
+
+@media (min-device-width: 414px)
+
+  .wrapper
+    width: 50%
+
+@media (min-device-width: 600px)
+
+  .wrapper
+    width: 33.33333%
+
+@media (min-device-width: 1024px)
+
+  .wrapper
+    width: 25%
