@@ -1,3 +1,7 @@
-<ul>
-    <li> {{title}} </li>
-</ul>
+<div class="wrapper" *ngFor="let item of items" >
+    
+    {{item.name}}
+
+    <img src="{{item.image}}" />
+
+</div>    
