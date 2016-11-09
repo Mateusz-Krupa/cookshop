@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-
+import { StoreService } from './store.service';
+ 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.sass'],
+  providers: [StoreService] 
 })
 export class AppComponent {
   title = 'app works!';
@@ -23,6 +25,11 @@ export class AppComponent {
 
   bottomNavigationItems = [
     {
+      name: 'My List',
+      icon: 'assets/svg/interface.svg',
+      link: 'my-list'
+    },
+        {
       name: 'My List',
       icon: 'assets/svg/interface.svg',
       link: 'my-list'
