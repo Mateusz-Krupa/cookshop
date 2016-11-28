@@ -6,7 +6,7 @@ import { Component } from '@angular/core'
   styleUrls: ['home.component.sass']
 })
 export class HomeComponent {
-  title = "home component"
+  title = "home component";
 
   categories = [{
     name: "Breakfast",

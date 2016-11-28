@@ -1,3 +1,20 @@
-<p>
-    {{title}} 
-</p>
+<body>
+<div>
+  <h1>{{model.title}}</h1>
+
+  <div class="recipePicContainer">
+    <img class="recipePic" src="{{model.image}}"/>
+  </div>
+
+  <div class="recipeWrapper">
+    <p class="dishDescription">{{model.description }}</p>
+    <p class="componentList">Components:</p>
+    <ul class="recipeComponents" *ngFor="let item of model.components">
+      <li>{{item.name}}: {{item.amount}}</li>
+    </ul>
+    <ul class="recipeSteps" *ngFor="let item of model.steps">
+      <li>{{item.description}}</li>
+    </ul>
+  </div>
+</div>
+</body>

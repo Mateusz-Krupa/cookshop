@@ -12,7 +12,12 @@ import { BasketComponent } from './basket/basket.component';
 import { HomeComponent } from './home/home.component';
 import { MainNavigation } from './ui/main-navigation/main-navigation.component';
 import { BottomNavigtion } from './ui/bottom-navigation/bottom-navigation.component';
-import { CategoryList } from './ui/category-list/category-list.component'
+import { CategoryList } from './ui/category-list/category-list.component';
+import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component'
+
+
+
 
 @NgModule({
   declarations: [
@@ -23,7 +28,9 @@ import { CategoryList } from './ui/category-list/category-list.component'
     HomeComponent,
     MainNavigation,
     BottomNavigtion,
-    CategoryList
+    CategoryList,
+    LoginComponent
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +42,9 @@ import { CategoryList } from './ui/category-list/category-list.component'
       { path: 'recipeList/:id', component: RecipeListComponent },
       { path: 'basket', component: BasketComponent },
       { path: '', component: HomeComponent }
+      { path: 'login', component: LoginComponent },
+      { path: 'registration', component: RegistrationComponent }
+
     ])
   ],
   providers: [],
